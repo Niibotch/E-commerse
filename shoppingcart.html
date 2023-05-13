@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            
+        }
+
+        body {
+            margin-top: 50px;
+        }
+
+        .first-con {
+            display: flex;
+            justify-content: end;
+            
+        }
+
+        .cartbox {
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: -10px;
+            right: 0px;
+            
+
+
+        }
+
+        .cart-img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+        }
+
+        .nav1 {
+            flex: 1;
+            background-color: white;
+            font-weight: bold;
+            font-size: 17px;
+            padding-left: 20px;
+            
+        }
+
+        .nav2 {
+            flex: 1;
+            background-color: white;
+        }
+
+        .nav3 {
+            display: flex;
+            flex: 4;
+            background-color: white;
+            justify-content: right;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+
+        .inner-con {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            
+            
+
+        }
+
+        .left {
+            background-color: white;
+            width: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
+            
+
+        }
+
+        .right {
+            background-color: white;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
+
+        .cards {
+            background-color: white;
+            height: 450px;
+            width: 230px;
+            margin-top: 20px;
+            text-align: center;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            transition: 0.5s;
+        }
+
+        .cards:hover {
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            
+            
+        }
+
+        .card-pic {
+            width: 220px;
+            height: 310px;
+            
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            width: 229px;
+            height: 52px;
+            cursor: pointer;
+            font-size: 18px;
+
+        }
+
+        .sizes {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(224, 224, 224);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            cursor: pointer;
+            margin-top: 5px;
+            color: black;
+            font-size: 13px;
+        }
+
+        .sizes-con {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100px;
+            width: 160px;
+            background-color: white;
+            margin-left: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: 1000px;
+        }
+
+        .main-con {
+            width: 1160px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="first-con">
+        <div class="cartbox">
+            <img class="cart-img" src="cartpic.png">
+            
+        </div>
+    </div>
+
+    <div class="main-con">
+
+        <div class="nav">
+            <div class="nav1">
+                Sizes:
+            </div>
+
+            <div class="nav2">
+                17 Product(s) found
+            </div>
+
+            <div class="nav3">
+                Order By :  &nbsp;<input type="text"  name="city" list="cityname"> <datalist id="cityname"> <option value="Select"> <option value="Lowest to Highest"> <option value="Highest to Lowest"></option> </datalist>
+            </div>
+        </div>
+
+        <div class="inner-con">
+            <div class="left">
+                
+                <div class="sizes-con">
+                    
+
+                    <div class="sizes">
+                        S
+                    </div>
+    
+                    <div class="sizes">
+                        XS
+                    </div>
+    
+                    <div class="sizes">
+                        M
+                    </div>
+    
+                    <div class="sizes">
+                        L
+                    </div>
+    
+                    <div class="sizes">
+                        XL
+                    </div>
+    
+                    <div class="sizes">
+                        XXL
+                    </div>
+    
+                    <div class="sizes">
+                        ML
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="right">
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt1.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt2.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt3.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt4.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt5.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt6.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt7.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt8.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt9.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt10.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt11.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt12.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt13.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt14.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt15.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt16.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img class="card-pic"  src="pics/shirt17.jpg" alt="shirt">
+                    <p>Cat Tee Black T-Shirt</p>
+                    <p>$<span class="price">10.9</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+               
+               
+            </div>
+        </div>
+    </div>
+
+
+   
+    
+
+</body>
+</html>
